@@ -1,4 +1,5 @@
 body {
+  /* Default color */
   background-color: blanchedalmond;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -8,4 +9,16 @@ body {
 
 img {
   width: 400px;
+}
+
+.bg0 {
+  background: lightpink;
+}
+
+.bg1 {
+  background: lightblue;
+}
+
+.bg2 {
+  background: lightgreen;
 }
