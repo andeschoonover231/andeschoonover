@@ -1,12 +1,33 @@
 body {
-  /* Default color */
-  background-color: blanchedalmond;
+  display: grid;
+  grid-template: 100px 1fr auto / auto 1000px auto;
+  background-color: limegreen;
   font-family: "Big Shoulders Display", cursive;
-
-  text-align: center;
 }
 
-img {
+nav {
+  height: 100px;
+  background-color: yellow;
+  grid-column: 1 / span 3;
+  grid-row: 1;
+}
+
+nav div {
+  background-color: hotpink;
+  grid-column: 2;
+  height: 100px;
+}
+
+main {
+  /* Default color */
+  background-color: white;
+  grid-column: 2;
+  grid-row: 2;
+  padding: 25px;
+  margin: 20px;
+}
+
+.bio img {
   width: 400px;
 }
 
@@ -20,4 +41,8 @@ img {
 
 .bg2 {
   background: lightgreen;
+}
+
+figure {
+  width: 200px;
 }

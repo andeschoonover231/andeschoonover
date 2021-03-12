@@ -44,49 +44,88 @@
       rel="stylesheet"
       href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
     />
+
+    <link rel="stylesheet" href="/css/lightgallery.min.css" />
     <link rel="stylesheet" href="/css/styles.css" />
   </head>
 
   <body>
-    <h1>Ande Schoonover</h1>
+    <nav>
+      <div>
+        <h1>Ande Schoonover</h1>
+      </div>
+    </nav>
+    <main>
+      <article class="bio">
+        <img src="/img/me.jpg" alt="Ande Schoonover" />
 
-    <img src="/img/me.jpg" alt="Ande Schoonover" />
+        <p>
+          Hello! My name is Ande. I'm a student at EWU that's a little terrified
+          to graduate this June... completely online. It's a bummer. I'm hoping
+          that my network won't be permenantly stunted, espcially considering
+          I'll have spent over 80% of my college career online, thanks to
+          running start.
+        </p>
+      </article>
 
-    <p>
-      Hello! My name is Ande. I'm a student at EWU that's a little terrified to
-      graduate this June... completely online. It's a bummer. I'm hoping that my
-      network won't be permenantly stunted, espcially considering I'll have
-      spent over 80% of my college career online, thanks to running start.
-    </p>
+      <article class="contact">
+        <h2>Contact Me!</h2>
+        <form
+          name="My Contact Form"
+          method="POST"
+          data-netlify="true"
+          action="/thanks.html"
+        >
+          <p>
+            <label>Name: <input type="text" name="name" required /></label>
+          </p>
 
-    <h2>Contact Me!</h2>
-    <form
-      name="My Contact Form"
-      method="POST"
-      data-netlify="true"
-      action="/thanks.html"
-    >
-      <p>
-        <label>Name: <input type="text" name="name" required /></label>
-      </p>
+          <p>
+            <label
+              >Your Email: <input type="email" name="email" required
+            /></label>
+          </p>
 
-      <p>
-        <label>Your Email: <input type="email" name="email" required /></label>
-      </p>
+          <p>
+            <label
+              >Message: <textarea name="message" required></textarea>
+            </label>
+          </p>
 
-      <p>
-        <label>Message: <textarea name="message" required></textarea></label>
-      </p>
+          <!--<p>
+            <div data-netlify-recaptcha="true"></div>
+          </p> -->
 
-      <!--<p>
-        <div data-netlify-recaptcha="true"></div>
-      </p> -->
+          <p>
+            <button type="submit">Send</button>
+          </p>
+        </form>
+      </article>
 
-      <p>
-        <button type="submit">Send</button>
-      </p>
-    </form>
+      <div id="gallery">
+        <figure>
+          <h3>Title</h3>
+          <a href="https://via.placeholder.com/300">
+            <img src="https://via.placeholder.com/150" alt="" />
+          </a>
+          <figcaption>Details</figcaption>
+        </figure>
 
+        <figure>
+          <a href="https://via.placeholder.com/300">
+            <img src="https://via.placeholder.com/150" alt="" />
+          </a>
+        </figure>
+
+        <figure>
+          <a href="https://via.placeholder.com/300">
+            <img src="https://via.placeholder.com/150" alt="" />
+          </a>
+        </figure>
+      </div>
+    </main>
+
+    <script src="/js/lightgallery.min.js"></script>
     <script src="/js/scripts.js"></script>
   </body>
 </html>
