@@ -1,15 +1,15 @@
-/*console.log("Okay!");
+console.log("Okay!");
 
-const backgrounds = ["bg0", "bg1", "bg2"];
+const colorScheme = ["color0", "color1", "color2", "color3"];
 
 let numRand;
 
-numRand = Math.floor(Math.random() * backgrounds.length);
+numRand = Math.floor(Math.random() * colorScheme.length);
 
 let pageBackground = document.querySelector("body");
 
-pageBackground.className = backgrounds[numRand];
-*/
+pageBackground.className = colorScheme[numRand];
+
 const gallery = document.getElementById("portfolio");
 
 lightGallery(gallery, {

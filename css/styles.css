@@ -1,8 +1,45 @@
+/*  Color Variables  */
+.color0 {
+  --bgColor: #ff2941;
+  --outerNavColor: #b434b2;
+  --navColor: #fe18d3;
+  --bioColor: #feff38;
+  --outerFootColor: #4206f1;
+  --footColor: #60159e;
+}
+
+.color1 {
+  --bgColor: #ff00c1;
+  --outerNavColor: #73e309;
+  --navColor: #0004ff;
+  --bioColor: turquoise;
+  --outerFootColor: #0db1f0;
+  --footColor: #f969c7;
+}
+
+.color2 {
+  --bgColor: #efb5be;
+  --outerNavColor: #fe3c71;
+  --navColor: #c86f4b;
+  --bioColor: #dddddd;
+  --outerFootColor: #0281fe;
+  --footColor: #2bd565;
+}
+
+.color3 {
+  --bgColor: #ffdb4a;
+  --outerNavColor: #20acc9;
+  --navColor: #673b90;
+  --bioColor: #f5a01f;
+  --outerFootColor: #c93127;
+  --footColor: #3d6bbc;
+}
+
 /*  General Code  */
 body {
   display: grid;
   grid-template: 100px 1fr auto / auto 1000px auto;
-  background-color: orange;
+  background-color: var(--bgColor);
   font-family: "Didact Gothic", sans-serif;
 }
 
@@ -16,13 +53,13 @@ h3 {
 /*  Nav Code  */
 nav {
   height: 100px;
-  background-color: yellow;
+  background-color: var(--outerNavColor);
   grid-column: 1 / span 3;
   grid-row: 1;
 }
 
 nav div {
-  background-color: hotpink;
+  background-color: var(--navColor);
   height: 100px;
   width: 1000px;
   margin: auto;
@@ -55,7 +92,7 @@ main {
   padding: 50px;
   padding-top: 100px;
   padding-bottom: 100px;
-  background-color: hotpink;
+  background-color: var(--bioColor);
 }
 
 .bio img {
@@ -93,7 +130,7 @@ form {
   width: 300px;
   height: 50px;
   align-items: center;
-  background-color: hotpink;
+  background-color: var(--navColor);
   color: white;
   letter-spacing: 1px;
   border: none;
@@ -138,13 +175,13 @@ form {
 /*  Footer  */
 footer {
   height: 100px;
-  background-color: yellow;
+  background-color: var(--outerFootColor);
   grid-column: 1 / span 3;
   grid-row: 3;
 }
 
 footer div {
-  background-color: limegreen;
+  background-color: var(--footColor);
   height: 100px;
   width: 1000px;
   margin: auto;
