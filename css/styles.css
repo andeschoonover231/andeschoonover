@@ -1,10 +1,19 @@
+/*  General Code  */
 body {
   display: grid;
   grid-template: 100px 1fr auto / auto 1000px auto;
-  background-color: limegreen;
-  font-family: "Big Shoulders Display", cursive;
+  background-color: orange;
+  font-family: "Didact Gothic", sans-serif;
 }
 
+h1,
+h2,
+h3 {
+  font-family: "DotGothic16", sans-serif;
+  letter-spacing: 1px;
+}
+
+/*  Nav Code  */
 nav {
   height: 100px;
   background-color: yellow;
@@ -14,35 +23,137 @@ nav {
 
 nav div {
   background-color: hotpink;
-  grid-column: 2;
   height: 100px;
+  width: 1000px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.nav h1 {
+  color: white;
+  font-size: 30pt;
+  letter-spacing: 1px;
+}
+
+/*  Main Body Setup  */
 main {
-  /* Default color */
   background-color: white;
   grid-column: 2;
   grid-row: 2;
-  padding: 25px;
-  margin: 20px;
+  text-align: center;
+}
+
+/*  Bio and Picture  */
+.bio {
+  display: flex;
+  align-items: center;
+}
+
+.bio figcaption {
+  padding: 50px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: hotpink;
 }
 
 .bio img {
   width: 400px;
 }
 
-.bg0 {
-  background: lightpink;
+/*  Contact Me  */
+.contact {
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
-.bg1 {
-  background: lightblue;
+.contact h2 {
+  margin: 0;
 }
 
-.bg2 {
-  background: lightgreen;
+form {
+  display: grid;
+  grid-template: 50px 60px 50px / 30% 70%;
 }
 
-figure {
-  width: 200px;
+.contact p {
+  display: table-row;
+  align-items: center;
+}
+
+.contact textarea {
+  vertical-align: top;
+  width: 500px;
+  height: 94px;
+  resize: none;
+}
+
+.contact button {
+  width: 300px;
+  height: 50px;
+  align-items: center;
+  background-color: hotpink;
+  color: white;
+  letter-spacing: 1px;
+  border: none;
+}
+
+#name {
+  width: 100%;
+  align-items: center;
+  text-align: right;
+}
+
+#email {
+  grid-column: 1;
+  grid-row: 2;
+  text-align: right;
+}
+
+#message {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+}
+
+#submit {
+  grid-column: 1 / span 2;
+  grid-row: 3;
+}
+
+/*  Portfolio  */
+#portfolio {
+  padding-bottom: 50px;
+}
+
+#portfolio figure {
+  width: 300px;
+  height: 300px;
+  display: inline-grid;
+  align-content: left;
+  margin: 0px;
+  padding: 0px;
+}
+
+/*  Footer  */
+footer {
+  height: 100px;
+  background-color: yellow;
+  grid-column: 1 / span 3;
+  grid-row: 3;
+}
+
+footer div {
+  background-color: limegreen;
+  height: 100px;
+  width: 1000px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer h3 {
+  color: white;
+  letter-spacing: 1px;
 }

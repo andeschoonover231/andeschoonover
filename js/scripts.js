@@ -10,7 +10,7 @@ let pageBackground = document.querySelector("body");
 
 pageBackground.className = backgrounds[numRand];
 */
-const gallery = document.getElementById("gallery");
+const gallery = document.getElementById("portfolio");
 
 lightGallery(gallery, {
   selector: "a"

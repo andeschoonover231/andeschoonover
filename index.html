@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
+    
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
 
     <title>Ande Schoonover</title>
 
@@ -51,22 +51,22 @@
 
   <body>
     <nav>
-      <div>
+      <div class="nav">
         <h1>Ande Schoonover</h1>
       </div>
     </nav>
     <main>
-      <article class="bio">
-        <img src="/img/me.jpg" alt="Ande Schoonover" />
+      <figure class="bio">
+        <img  src="/img/me.jpg" alt="Ande Schoonover" />
 
-        <p>
+        <figcaption>
           Hello! My name is Ande. I'm a student at EWU that's a little terrified
           to graduate this June... completely online. It's a bummer. I'm hoping
           that my network won't be permenantly stunted, espcially considering
           I'll have spent over 80% of my college career online, thanks to
           running start.
-        </p>
-      </article>
+        </figcaption>
+      </figure>
 
       <article class="contact">
         <h2>Contact Me!</h2>
@@ -76,54 +76,72 @@
           data-netlify="true"
           action="/thanks.html"
         >
-          <p>
+          <p id="name">
             <label>Name: <input type="text" name="name" required /></label>
           </p>
 
-          <p>
+          <p id="email">
             <label
               >Your Email: <input type="email" name="email" required
             /></label>
           </p>
 
-          <p>
+          <p id="message">
             <label
               >Message: <textarea name="message" required></textarea>
             </label>
           </p>
 
-          <!--<p>
-            <div data-netlify-recaptcha="true"></div>
-          </p> -->
-
-          <p>
+          <h3 id="submit">
             <button type="submit">Send</button>
-          </p>
+          </h3>
         </form>
       </article>
 
-      <div id="gallery">
+      <div id="portfolio">
+        <h2>My Work</h2>
         <figure>
-          <h3>Title</h3>
-          <a href="https://via.placeholder.com/300">
-            <img src="https://via.placeholder.com/150" alt="" />
-          </a>
-          <figcaption>Details</figcaption>
-        </figure>
-
-        <figure>
-          <a href="https://via.placeholder.com/300">
-            <img src="https://via.placeholder.com/150" alt="" />
+          <a href="https://via.placeholder.com/800">
+            <img src="https://via.placeholder.com/300" alt="" />
           </a>
         </figure>
 
         <figure>
-          <a href="https://via.placeholder.com/300">
-            <img src="https://via.placeholder.com/150" alt="" />
+          <a href="https://via.placeholder.com/500">
+            <img src="https://via.placeholder.com/300/FFFF00/000000" alt="" />
           </a>
+        </figure>
+
+        <figure>
+          <a href="https://via.placeholder.com/500">
+            <img src="https://via.placeholder.com/300" alt="" />
+          </a>
+        </figure>
+
+        <figure>
+            <a href="https://via.placeholder.com/500">
+              <img src="https://via.placeholder.com/300" alt="" />
+            </a>
+        </figure>
+          
+        <figure>
+              <a href="https://via.placeholder.com/500">
+                <img src="https://via.placeholder.com/300" alt="" />
+              </a>
+        </figure>
+
+        <figure>
+            <a href="https://via.placeholder.com/500">
+              <img src="https://via.placeholder.com/300" alt="" />
+            </a>
         </figure>
       </div>
     </main>
+
+    <footer>
+      <div>
+        <h3>You've reached the end.</h3>
+    </footer>
 
     <script src="/js/lightgallery.min.js"></script>
     <script src="/js/scripts.js"></script>
