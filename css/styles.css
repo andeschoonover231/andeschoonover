@@ -35,6 +35,15 @@
   --footColor: #3d6bbc;
 }
 
+.color4 {
+  --bgColor: #dbff9a;
+  --outerNavColor: #fd35a4;
+  --navColor: #4983a9;
+  --bioColor: #fe9f73;
+  --outerFootColor: #fd35a4;
+  --footColor: #60159e;
+}
+
 /*  General Code  */
 body {
   display: grid;
@@ -193,4 +202,47 @@ footer div {
 footer h3 {
   color: white;
   letter-spacing: 1px;
+}
+
+/*  404 Styling  */
+
+.failure h1,
+.failure h2,
+.failure h3 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
+  width: 600px;
+  margin: 100px;
+  background-color: var(--bioColor);
+}
+
+.failure h2 {
+  line-height: 35px;
+}
+
+.failure h3 {
+  line-height: 25px;
+}
+
+/*  Thanks Page  */
+.thanks {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.thanks p {
+  padding: 100px;
+  background-color: var(--bioColor);
+}
+
+.thanks a {
+  color: black;
+}
+
+.thanks a:visited {
+  color: black;
 }
