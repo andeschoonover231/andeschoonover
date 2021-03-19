@@ -59,6 +59,10 @@ h3 {
   letter-spacing: 1px;
 }
 
+h2 {
+  padding-top: 30px;
+}
+
 /*  Nav Code  */
 nav {
   height: 100px;
@@ -179,6 +183,50 @@ form {
   align-content: left;
   margin: 0px;
   padding: 0px;
+}
+
+#portfolio img {
+  width: 300px;
+  height: 300px;
+}
+
+.lg-outer .lg-img-wrap {
+  background-color: var(--bioColor);
+}
+
+.lg-css3.lg-slide.lg-use-css3 .lg-item.lg-current,
+.lg-css3.lg-slide.lg-use-css3 .lg-item.lg-next-slide,
+.lg-css3.lg-slide.lg-use-css3 .lg-item.lg-prev-slide {
+  background-color: var(--bioColor);
+}
+
+.lg-toolbar {
+  background-color: var(--navColor);
+}
+
+.lg-toolbar .lg-close {
+  color: white;
+}
+
+.lg-toolbar #lg-counter {
+  color: white;
+}
+
+.lg-actions .lg-icon {
+  color: black;
+}
+
+.lg-sub-html {
+  background-color: var(--footColor);
+}
+
+.lg-sub-html h2,
+.lg-sub-html p {
+  color: white;
+}
+
+.lg-image .lg-object {
+  height: 800px;
 }
 
 /*  Footer  */

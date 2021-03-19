@@ -13,5 +13,6 @@ pageBackground.className = colorScheme[numRand];
 const gallery = document.getElementById("portfolio");
 
 lightGallery(gallery, {
-  selector: "a"
+  selector: "a",
+  download: false
 });
